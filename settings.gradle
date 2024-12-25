@@ -1,3 +1,4 @@
 include ':MagicalPEC'
 include ':app'
 rootProject.name = "MagicalPdfEditor"
+

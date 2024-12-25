@@ -28,7 +28,9 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import androidx.core.content.FileProvider;
 
-import com.tapadoo.alerter.Alerter;
+
+
+import ir.vasl.magicalpdfeditor.alerter.Alerter;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
