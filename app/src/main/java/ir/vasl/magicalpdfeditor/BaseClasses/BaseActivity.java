@@ -28,7 +28,10 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     protected boolean checkPermission(String[] permissions) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2){
+            return true;
+        }
+       else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             return checkPermissionsGrant(permissions);
         }
         return true;
@@ -64,6 +67,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     protected void launchFilePicker() {
+
         String[] needPermissions = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (!checkPermission(needPermissions))
             return;
